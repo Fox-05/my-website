@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FFF6E5; /* Màu nền trắng sữa */
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  font-size: 50px;
+  color: #D71B8D; /* Màu hồng đậm */
+  transform: translateX(-50%);
+}
+
+a {
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #D71B8D; /* Màu hồng đậm */
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  position: absolute;
+  z-index: 1;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #F5A3D1; /* Màu hồng nhạt */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+  background-color: #D71B8D; /* Màu hồng đậm khi hover */
+}
+
+.notification {
+  position: absolute;
+  width: 240px;
+  height: 160px;
+  background-color: #FFF6E5; /* Màu nền trắng sữa */
+  color: #D71B8D; /* Màu chữ hồng đậm */
+  font-size: 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  z-index: 2;
+  border: 2px solid #F5A3D1; /* Đường viền màu hồng nhạt */
+}
+
+.notification-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  background-color: #F5A3D1; /* Header với màu hồng nhạt */
+  border-radius: 5px 5px 0 0;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.notification-header span {
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+  font-family: 'Roboto', sans-serif;
+}
+
+.notification p {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.minimize-btn {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
